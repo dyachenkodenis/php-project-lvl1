@@ -10,6 +10,11 @@
     "bin":[
         "bin/brain-games"
     ],
+    "autoload": {
+    "files": [
+      "src/Cli.php"
+    ]
+  },
     "minimum-stability": "dev",
     "require": {
         "wp-cli/wp-cli": "2.5.x-dev"
