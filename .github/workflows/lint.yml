@@ -1,10 +1,17 @@
 name: lint
 
 on:
+<<<<<<< HEAD
   commit:
     branches: [master]
       - '**'
     
+=======
+	push:
+		branches: [main]
+			- '**'
+		
+>>>>>>> 57d0350b66975196114b4d4f496371812ca5ad41
 
 jobs:
   build:
