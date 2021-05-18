@@ -1,8 +1,8 @@
 name: lint
 
 on:
-	commit:
-		branches: [master]
+	push:
+		branches: [main]
 			- '**'
 		
 
