@@ -7,5 +7,3 @@ jobs:
       - name: linter
         uses: actions/checkout@v2
       - run: make lint
-with:
-my_id: ${{ secrets.DENIS_ID }}
