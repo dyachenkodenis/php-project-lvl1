@@ -1,25 +1,18 @@
 name: lint
 
 on:
-<<<<<<< HEAD
-  commit:
-    branches: [master]
-      - '**'
+push:
+branches: [main]
+- '**'
     
-=======
-	push:
-		branches: [main]
-			- '**'
-		
->>>>>>> 57d0350b66975196114b4d4f496371812ca5ad41
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v2
 
-      - name: Lint
-        uses: make lint
-        with:
-          my_id: ${{ secrets.DENIS_ID }} 
+- name: Lint
+uses: make lint
+with:
+my_id: ${{ secrets.DENIS_ID }}
