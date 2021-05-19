@@ -19,6 +19,6 @@
     "minimum-stability": "dev",
     "require": {
         "wp-cli/wp-cli": "2.5.x-dev",
-        "squizlabs/php_codesniffer": "3.*-dev"
+        "squizlabs/php_codesniffer": "*"
     }
 }

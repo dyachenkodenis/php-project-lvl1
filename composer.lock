@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4fc63c4d87178eb44272849f9bd1db8",
+    "content-hash": "c1c47c4c5cab3c3349f9c92e10767e1b",
     "packages": [
         {
             "name": "mustache/mustache",
@@ -118,28 +118,27 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "dev-master",
+            "version": "4.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "3d6ae7ff7e2f80da33e39f6b4a3e0a8986fb6dd8"
+                "reference": "8c1e8a1a2be844b69beaed90308d130d710882b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/3d6ae7ff7e2f80da33e39f6b4a3e0a8986fb6dd8",
-                "reference": "3d6ae7ff7e2f80da33e39f6b4a3e0a8986fb6dd8",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/8c1e8a1a2be844b69beaed90308d130d710882b6",
+                "reference": "8c1e8a1a2be844b69beaed90308d130d710882b6",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
-                "php": ">=5.4.0"
+                "php": ">=7.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "phpunit/phpunit": "^8.0 || ^9.0"
             },
-            "default-branch": true,
             "bin": [
                 "bin/phpcs",
                 "bin/phpcbf"
@@ -171,7 +170,7 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2021-05-17T04:15:11+00:00"
+            "time": "2021-05-17T04:32:09+00:00"
         },
         {
             "name": "symfony/finder",
@@ -417,8 +416,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "wp-cli/wp-cli": 20,
-        "squizlabs/php_codesniffer": 20
+        "wp-cli/wp-cli": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
