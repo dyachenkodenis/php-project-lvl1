@@ -1,0 +1,89 @@
+#!/usr/bin/env php
+<?php
+  require_once './vendor/autoload.php';
+
+  use function cli\line;
+  use function cli\prompt;
+
+function symbol_rand(){
+    
+  $items = ['+', '-', '*'];
+
+  return $items[rand(0, 2)];
+
+}
+
+line("Welcome to the Brain Games!");
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
+
+/* first block start */
+$firstOperation = symbol_rand();
+
+$firstNumberOne = rand(1, 20);
+$secondNumberOne = rand(1, 20);
+
+if($firstOperation === '+'):
+$expressionOne = $firstNumberOne + $secondNumberOne;
+elseif($firstOperation === '-'):
+$expressionOne = $firstNumberOne - $secondNumberOne;
+else:
+  $expressionOne = $firstNumberOne * $secondNumberOne;
+endif;
+
+$number_one = prompt("What is the result of the expression?\nQuestion: {$firstNumberOne} {$firstOperation} {$secondNumberOne}");
+line("Your answer:", $number_one);
+
+if($number_one == $expressionOne):
+  line('Correct!');
+else:
+  line("'{$number_one}'is wrong answer ;(. Correct answer was '{$expressionOne}'");
+endif;
+line("Let's try again, {$name}!");
+/* first block stop */
+
+/* second block start */
+$secondOperation = symbol_rand();
+$firstNumberTwo = rand(1, 20);
+$secondNumberTwo = rand(1, 20);
+
+if ($secondOperation === '+') :
+  $expressionTwo = $firstNumberTwo + $secondNumberTwo;
+elseif ($secondOperation === '-') :
+  $expressionTwo = $firstNumberTwo - $secondNumberTwo;
+else :
+  $expressionTwo = $firstNumberTwo * $secondNumberTwo;
+endif;
+
+$number_two = prompt("What is the result of the expression?\nQuestion: {$firstNumberTwo} {$secondOperation} {$secondNumberTwo}");
+line("Your answer:", $number_two);
+if ($number_two == $expressionTwo):
+  line('Correct!');
+else:
+  line("'{$number_two}'is wrong answer ;(. Correct answer was '{$expressionTwo}'");
+endif;
+line("Let's try again, {$name}!");
+/* second block stop */
+
+/* third block start */
+$thirdOperation = symbol_rand();
+$firstNumberThree = rand(1, 20);
+$secondNumberThree = rand(1, 20);
+
+if ($thirdOperation === '+') :
+  $expressionThree = $firstNumberThree + $secondNumberThree;
+elseif ($thirdOperation === '-') :
+  $expressionThree = $firstNumberThree - $secondNumberThree;
+else :
+  $expressionThree = $firstNumberThree * $secondNumberThree;
+endif;
+
+$number_three = prompt("What is the result of the expression?\nQuestion: {$firstNumberThree} {$thirdOperation} {$secondNumberThree}");
+line("Your answer:", $number_three);
+if ($number_three == $expressionThree):
+  line('Correct!');
+else:
+  line("'{$number_three}'is wrong answer ;(. Correct answer was '{$expressionThree}'");
+endif;
+line("OK, Bye {$name}!");
+/* third block stop */
