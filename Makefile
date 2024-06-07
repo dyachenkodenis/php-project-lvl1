@@ -1,5 +1,4 @@
 # Make
-
 install:
 	composer install
 brain-games:
