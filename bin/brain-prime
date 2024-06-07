@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+  require_once './vendor/autoload.php';
+
+  use function cli\line;
+  use function cli\prompt;
+
+function isSimpleNumber($num)
+{
+    if ($num < 2):
+        return false;
+    endif;
+    for ($i = 2; $i <= sqrt($num); $i++) {
+        if ($num % $i === 0):
+            return false;
+        endif;
+    }
+    return true;
+}
+$randNum = rand(1, 20);
+line("Welcome to the Brain Games!");
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
+
+$answer = prompt("Answer \"yes\" if given number is prime. Otherwise answer \"no\".\nQuestion: {$randNum}");
+line("Your answer:", $answer);
+
+if (isSimpleNumber($randNum) && $answer == 'yes') :
+    line('Correct!');
+else :
+    line("'{$answer}'is wrong answer ;(. '");
+endif;
+line("OK, Bye {$name}!");
