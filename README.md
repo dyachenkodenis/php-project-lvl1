@@ -7,3 +7,4 @@ asciinema
 
 make install -  https://asciinema.org/a/6e4wMrZOPigbI2NAGHN0qTVXh
 make brain-even -
+make brain-calc - https://asciinema.org/connect/7c2a0579-0abf-4cd4-a012-c6499866cb39
