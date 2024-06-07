@@ -1,0 +1,85 @@
+#!/usr/bin/env php
+<?php
+  require_once './vendor/autoload.php';
+
+  use function cli\line;
+  use function cli\prompt;
+
+function getProgressArray()
+{
+    $arr = [];
+    $i = 10;
+    $end = 30;
+
+    $hiddenNum = rand(0, 9);
+
+    while ($i <= $end) {
+        if ($i % 2 == 0) {
+            array_push($arr, $i);
+        }
+        $i++;
+    }
+
+    $sliceArr = array_slice($arr, 1, count($arr));
+
+    $newSliceArr = array_slice($arr, 1, count($arr));
+
+    array_splice($sliceArr, array_search($sliceArr[$hiddenNum], $sliceArr), 1, '...');
+
+    return ['arr' => $sliceArr, 'num' => $newSliceArr[$hiddenNum]];
+}
+
+line("Welcome to the Brain Games!");
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
+
+
+
+/* first block start */
+$firstData = getProgressArray();
+$firstProgress = implode(',', $firstData['arr']);
+$firstProgressElem = $firstData['num'];
+
+$number_one = prompt("What number is missing in the progression?\nQuestion: {$firstProgress}");
+line("Your answer:", $number_one);
+
+if ($number_one == $firstProgressElem) :
+    line('Correct!');
+else :
+    line("'{$number_one}'is wrong answer ;(. Correct answer was '{$firstProgressElem}'");
+endif;
+line("Let's try again, {$name}!");
+/* first block stop */
+
+/* second block start */
+$secondData = getProgressArray();
+$secondProgress = implode(',', $secondData['arr']);
+$secondProgressElem = $secondData['num'];
+
+$number_two = prompt("What number is missing in the progression?\nQuestion: {$secondProgress}");
+line("Your answer:", $number_two);
+
+if ($number_two == $secondProgressElem) :
+    line('Correct!');
+else :
+    line("'{$number_two}'is wrong answer ;(. Correct answer was '{$secondProgressElem}'");
+endif;
+line("Let's try again, {$name}!");
+/* second block stop */
+
+
+/* third block start */
+$thirdData = getProgressArray();
+$thirdProgress = implode(',', $thirdData['arr']);
+$thirdProgressElem = $thirdData['num'];
+
+$number_three = prompt("What number is missing in the progression?\nQuestion: {$thirdProgress}");
+line("Your answer:", $number_three);
+
+if ($number_three == $thirdProgressElem) :
+    line('Correct!');
+else :
+    line("'{$number_three}'is wrong answer ;(. Correct answer was '{$thirdProgressElem}'");
+endif;
+line("OK, Bye {$name}!");
+/* third block stop */
