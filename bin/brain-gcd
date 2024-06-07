@@ -56,5 +56,5 @@ if ($number_three == $resultThree) :
 else :
     line("'{$number_three}'is wrong answer ;(. Correct answer was '{$resultThree}'");
 endif;
-line("Let's try again, {$name}!");
+line("OK, Bye {$name}!");
 /* second block stop */
