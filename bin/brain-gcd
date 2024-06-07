@@ -1,0 +1,60 @@
+#!/usr/bin/env php
+<?php
+  require_once './vendor/autoload.php';
+
+  use function cli\line;
+  use function cli\prompt;
+
+
+line("Welcome to the Brain Games!");
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
+
+/* first block start */
+$firstNumberOne = rand(1, 20);
+$secondNumberOne = rand(1, 20);
+$resultOne = max([$firstNumberOne, $secondNumberOne]);
+
+$number_one = prompt("Find the greatest common divisor of given numbers.\nQuestion:  {$firstNumberOne} {$secondNumberOne}");
+line("Your answer:", $number_one);
+
+if ($number_one == $resultOne) :
+    line('Correct!');
+else :
+    line("'{$number_one}'is wrong answer ;(. Correct answer was '{$resultOne}'");
+endif;
+line("Let's try again, {$name}!");
+/* first block stop */
+
+
+/* second block start */
+$firstNumberTwo = rand(1, 20);
+$secondNumberTwo = rand(1, 20);
+$resultTwo = max([$firstNumberTwo, $secondNumberTwo]);
+
+$number_two = prompt("Find the greatest common divisor of given numbers.\nQuestion:  {$firstNumberTwo} {$secondNumberTwo}");
+line("Your answer:", $number_two);
+
+if ($number_two == $resultTwo) :
+    line('Correct!');
+else :
+    line("'{$number_two}'is wrong answer ;(. Correct answer was '{$resultTwo}'");
+endif;
+line("Let's try again, {$name}!");
+/* second block stop */
+
+/* second block start */
+$firstNumberThree = rand(1, 20);
+$secondNumberThree = rand(1, 20);
+$resultThree = max([$firstNumberThree, $secondNumberThree]);
+
+$number_three = prompt("Find the greatest common divisor of given numbers.\nQuestion:  {$firstNumberThree} {$secondNumberThree}");
+line("Your answer:", $number_three);
+
+if ($number_three == $resultThree) :
+    line('Correct!');
+else :
+    line("'{$number_three}'is wrong answer ;(. Correct answer was '{$resultThree}'");
+endif;
+line("Let's try again, {$name}!");
+/* second block stop */
