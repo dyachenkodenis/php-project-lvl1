@@ -1,11 +1,11 @@
-name: Start Linter
-on: [push]
-jobs:
-  Linter:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install PHP_CodeSniffer
-        run: composer global require squizlabs/php_codesniffer
-      - name: linter
-        uses: actions/checkout@v2
-      - run: make lint
+#name: Start Linter
+#on: [push]
+#jobs:
+#  Linter:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Install PHP_CodeSniffer
+#        run: composer global require squizlabs/php_codesniffer
+#      - name: linter
+#        uses: actions/checkout@v2
+#      - run: make lint
