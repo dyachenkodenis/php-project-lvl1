@@ -59,7 +59,7 @@ if ($secondOperation === '+') {
 
 $number_two = prompt("What is the result of the expression?\nQuestion: {$firstNumberTwo} {$secondOperation} {$secondNumberTwo}");
 line("Your answer:", $number_two);
-if ($number_two == $expressionTwo){
+if ($number_two == $expressionTwo) {
     line('Correct!');
 } else {
     line("'{$number_two}'is wrong answer ;(. Correct answer was '{$expressionTwo}'");
