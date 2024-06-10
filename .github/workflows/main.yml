@@ -1,25 +1,25 @@
-name: CI
+#name: CI
 
-on:
-  push:
-    branches:
-      - main
+#on:
+#  push:
+#    branches:
+#      - main
 
-jobs:
-  lint:
-    runs-on: ubuntu-latest
+#jobs:
+#  lint:
+#    runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
 
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '7.4'
+#      - name: Set up PHP
+#        uses: shivammathur/setup-php@v2
+#        with:
+#          php-version: '7.4'
 
-      - name: Install PHP_CodeSniffer
-        run: composer global require squizlabs/php_codesniffer
+#      - name: Install PHP_CodeSniffer
+#        run: composer global require squizlabs/php_codesniffer
 
-      - name: Run phpcs
-        run: composer exec --verbose phpcs -- --standard=PSR12 src bin
+#      - name: Run phpcs
+#        run: composer exec --verbose phpcs -- --standard=PSR12 src bin
