@@ -11,24 +11,24 @@ $name = prompt('May I have your name?');
 line("Hello, %s!", $name);
 line('Answer "yes" if the number is even, otherwise answer "no".');
 
-$number_one = rand(1,10);
+$number_one = rand(1, 10);
 
 line('Question: '.$number_one);
 
 $answer = prompt('Your answer ');
 if ($number_one % 2 == 0 && $answer  == 'yes' || $number_one % 2 > 0 && $answer  == 'no') {
         line('Correct!');
-        $number_two = rand(1,20);
+        $number_two = rand(1, 20);
         line('Question: '.$number_two);
     $answer_two = prompt('Your answer ');
     if ($number_two % 2 == 0 && $answer_two  == 'yes' || $number_one % 2 > 0 && $answer  == 'no') {
         line('Correct!');
-        $number_three = rand(1,20);
+        $number_three = rand(1, 20);
         line('Question: '.$number_three);
         $answer_three = prompt('Your answer ');
         if ($number_three % 2 == 0 && $answer_three  == 'yes'  || $number_three % 2 > 0 && $answer_three  == 'no') {
             line('Congratulations, Bill!');
-        } else if($number_three % 2 > 0 && $answer_three  == 'yes'  || $number_three % 2 == 0 && $answer_three  == 'no') {
+        } else if ($number_three % 2 > 0 && $answer_three  == 'yes'  || $number_three % 2 == 0 && $answer_three  == 'no') {
             line("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, Bill!");
         }
     } else if ($number_two % 2 > 0 && $answer_two  == 'yes' || $number_two % 2 == 0 && $answer_two  == 'no') {
