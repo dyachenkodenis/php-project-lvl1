@@ -18,11 +18,11 @@ $resultOne = max([$firstNumberOne, $secondNumberOne]);
 $number_one = prompt("Find the greatest common divisor of given numbers.\nQuestion:  {$firstNumberOne} {$secondNumberOne}");
 line("Your answer:", $number_one);
 
-if ($number_one == $resultOne) :
+if ($number_one == $resultOne) {
     line('Correct!');
-else :
+} else {
     line("'{$number_one}'is wrong answer ;(. Correct answer was '{$resultOne}'");
-endif;
+}
 line("Let's try again, {$name}!");
 /* first block stop */
 
@@ -35,11 +35,11 @@ $resultTwo = max([$firstNumberTwo, $secondNumberTwo]);
 $number_two = prompt("Find the greatest common divisor of given numbers.\nQuestion:  {$firstNumberTwo} {$secondNumberTwo}");
 line("Your answer:", $number_two);
 
-if ($number_two == $resultTwo) :
+if ($number_two == $resultTwo) {
     line('Correct!');
-else :
+} else {
     line("'{$number_two}'is wrong answer ;(. Correct answer was '{$resultTwo}'");
-endif;
+}
 line("Let's try again, {$name}!");
 /* second block stop */
 
@@ -51,10 +51,10 @@ $resultThree = max([$firstNumberThree, $secondNumberThree]);
 $number_three = prompt("Find the greatest common divisor of given numbers.\nQuestion:  {$firstNumberThree} {$secondNumberThree}");
 line("Your answer:", $number_three);
 
-if ($number_three == $resultThree) :
+if ($number_three == $resultThree) {
     line('Correct!');
-else :
+} else {
     line("'{$number_three}'is wrong answer ;(. Correct answer was '{$resultThree}'");
-endif;
+}
 line("OK, Bye {$name}!");
 /* second block stop */
