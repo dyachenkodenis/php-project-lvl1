@@ -37,9 +37,9 @@ $number_one = prompt("What is the result of the expression?\nQuestion: {$firstNu
 line("Your answer:", $number_one);
 
 if ($number_one == $expressionOne) {
-  line('Correct!');
+    line('Correct!');
 } else {
-  line("'{$number_one}'is wrong answer ;(. Correct answer was '{$expressionOne}'");
+    line("'{$number_one}'is wrong answer ;(. Correct answer was '{$expressionOne}'");
 }
 line("Let's try again, {$name}!");
 /* first block stop */
@@ -50,19 +50,19 @@ $firstNumberTwo = rand(1, 20);
 $secondNumberTwo = rand(1, 20);
 
 if ($secondOperation === '+') {
-  $expressionTwo = $firstNumberTwo + $secondNumberTwo;
+    $expressionTwo = $firstNumberTwo + $secondNumberTwo;
 } elseif ($secondOperation === '-') {
-  $expressionTwo = $firstNumberTwo - $secondNumberTwo;
+    $expressionTwo = $firstNumberTwo - $secondNumberTwo;
 } else {
-  $expressionTwo = $firstNumberTwo * $secondNumberTwo;
+    $expressionTwo = $firstNumberTwo * $secondNumberTwo;
 }
 
 $number_two = prompt("What is the result of the expression?\nQuestion: {$firstNumberTwo} {$secondOperation} {$secondNumberTwo}");
 line("Your answer:", $number_two);
 if ($number_two == $expressionTwo){
-  line('Correct!');
+    line('Correct!');
 } else {
-  line("'{$number_two}'is wrong answer ;(. Correct answer was '{$expressionTwo}'");
+    line("'{$number_two}'is wrong answer ;(. Correct answer was '{$expressionTwo}'");
 }
 line("Let's try again, {$name}!");
 /* second block stop */
@@ -73,19 +73,19 @@ $firstNumberThree = rand(1, 20);
 $secondNumberThree = rand(1, 20);
 
 if ($thirdOperation === '+') {
-  $expressionThree = $firstNumberThree + $secondNumberThree;
+    $expressionThree = $firstNumberThree + $secondNumberThree;
 } elseif ($thirdOperation === '-') {
-  $expressionThree = $firstNumberThree - $secondNumberThree;
+    $expressionThree = $firstNumberThree - $secondNumberThree;
 } else {
-  $expressionThree = $firstNumberThree * $secondNumberThree;
+    $expressionThree = $firstNumberThree * $secondNumberThree;
 }
 
 $number_three = prompt("What is the result of the expression?\nQuestion: {$firstNumberThree} {$thirdOperation} {$secondNumberThree}");
 line("Your answer:", $number_three);
 if ($number_three == $expressionThree) {
-  line('Correct!');
+    line('Correct!');
 } else {
-  line("'{$number_three}'is wrong answer ;(. Correct answer was '{$expressionThree}'");
+    line("'{$number_three}'is wrong answer ;(. Correct answer was '{$expressionThree}'");
 }
 line("OK, Bye {$name}!");
 /* third block stop */
