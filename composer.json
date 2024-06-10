@@ -22,7 +22,7 @@
   },
     "minimum-stability": "dev",
     "require": {
-        "wp-cli/wp-cli": "2.11.x-dev",
+        "wp-cli/wp-cli": "2.4.x-dev",
         "squizlabs/php_codesniffer": "*"
     }
 }
