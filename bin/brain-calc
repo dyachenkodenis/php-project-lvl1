@@ -25,13 +25,13 @@ line("Hello, %s!", $name);
   $firstNumberOne = rand(1, 20);
   $secondNumberOne = rand(1, 20);
 
-  if($firstOperation === '+'):
-  $expressionOne = $firstNumberOne + $secondNumberOne;
-  elseif($firstOperation === '-'):
-  $expressionOne = $firstNumberOne - $secondNumberOne;
-  else:
-    $expressionOne = $firstNumberOne * $secondNumberOne;
-  endif;
+if($firstOperation === '+'):
+$expressionOne = $firstNumberOne + $secondNumberOne;
+elseif($firstOperation === '-'):
+$expressionOne = $firstNumberOne - $secondNumberOne;
+else:
+  $expressionOne = $firstNumberOne * $secondNumberOne;
+endif;
 
 $number_one = prompt("What is the result of the expression?\nQuestion: {$firstNumberOne} {$firstOperation} {$secondNumberOne}");
 line("Your answer:", $number_one);
