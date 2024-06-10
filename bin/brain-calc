@@ -6,7 +6,8 @@ require_once './vendor/autoload.php';
   use function cli\line;
   use function cli\prompt;
 
-function symbol_rand(){
+function symbol_rand()
+{
     
   $items = ['+', '-', '*'];
 
