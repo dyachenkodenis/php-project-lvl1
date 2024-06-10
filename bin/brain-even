@@ -11,7 +11,9 @@ $name = prompt('May I have your name?');
 line("Hello, %s!", $name);
 line('Answer "yes" if the number is even, otherwise answer "no".');
 $number_one = rand(1,10);
+
 line('Question: '.$number_one);
+
 $answer = prompt('Your answer ');
 if ($number_one % 2 == 0 && $answer  == 'yes' || $number_one % 2 > 0 && $answer  == 'no') {
         line('Correct!');
