@@ -7,13 +7,13 @@
 
 function isSimpleNumber($num)
 {
-    if ($num < 2):
+    if ($num < 2) {
         return false;
-    endif;
+    }
     for ($i = 2; $i <= sqrt($num); $i++) {
-        if ($num % $i === 0):
+        if ($num % $i === 0) {
             return false;
-        endif;
+        }
     }
     return true;
 }
@@ -25,9 +25,9 @@ line("Hello, %s!", $name);
 $answer = prompt("Answer \"yes\" if given number is prime. Otherwise answer \"no\".\nQuestion: {$randNum}");
 line("Your answer:", $answer);
 
-if (isSimpleNumber($randNum) && $answer == 'yes') :
+if (isSimpleNumber($randNum) && $answer == 'yes') {
     line('Correct!');
-else :
+} else {
     line("'{$answer}'is wrong answer ;(. '");
-endif;
+}
 line("OK, Bye {$name}!");
