@@ -1,6 +1,7 @@
 # Make
 install:
 	composer install
+	composer update
 
 validate:
 	composer validate
