@@ -9,5 +9,5 @@ jobs:
       - name: Install PHP_CodeSniffer
         run: composer global require squizlabs/php_codesniffer
       - name: linter
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - run: make lint
