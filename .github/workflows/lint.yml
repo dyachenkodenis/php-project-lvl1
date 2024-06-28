@@ -4,10 +4,10 @@ jobs:
   Linter:
     runs-on: ubuntu-latest
     steps:
+      - name: Clone
+        uses: actions/checkout@v4
       - name: Install      
         run: make install
       - name: Install PHP_CodeSniffer
-        run: composer global require squizlabs/php_codesniffer
-      - name: linter
-        uses: actions/checkout@v4
+        run: composer global require squizlabs/php_codesniffer      
       - run: make lint
