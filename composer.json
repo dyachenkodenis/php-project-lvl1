@@ -8,6 +8,11 @@
             "email": "denisdyachenko.90@gmail.com"
         }
     ],
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    },
     "bin":[
         "./bin/brain-games",
         "./bin/brain-even",
@@ -15,12 +20,7 @@
         "./bin/brain-gcd",
         "./bin/brain-progression",
         "./bin/brain-prime"
-    ],
-    "autoload": {
-    "files": [
-      "src/Cli.php"
-    ]
-  },  
+    ],    
    "require": {
         "wp-cli/php-cli-tools": "^0.11.22"
     },
