@@ -5,15 +5,18 @@
 
 asciinema
 
+# установка
+
 make install -  https://asciinema.org/a/6e4wMrZOPigbI2NAGHN0qTVXh
 
-make brain-even - https://asciinema.org/a/E9iochaeBIFzgtUNOotTnOKt9
-
-make brain-calc - https://asciinema.org/connect/7c2a0579-0abf-4cd4-a012-c6499866cb39
-
-make brain-gcd -    https://asciinema.org/a/qJ69fVDEXeEEA4qDmIFZ2gaCG
-
-brain-progression - https://asciinema.org/a/1kzhDf8jftOFpiHG0RNWDXLXW
-
-brain-prime - https://asciinema.org/a/cM4wXiJTxfKzVUsnuEIcn2LHt
-
+# запуск
+## brain-even
+<a href="https://asciinema.org/a/E9iochaeBIFzgtUNOotTnOKt9"><img src="https://i.imgur.com/MA6hZz1.png" width=40%></a> 
+## brain-calc
+<a href="https://asciinema.org/connect/7c2a0579-0abf-4cd4-a012-c6499866cb39"><img src="https://i.imgur.com/81ddWvX.png"></a>
+## brain-gcd
+<a href="https://asciinema.org/a/qJ69fVDEXeEEA4qDmIFZ2gaCG"><img src="https://i.imgur.com/zJA6CfH.png"></a>
+## brain-progression
+<a href="https://asciinema.org/a/1kzhDf8jftOFpiHG0RNWDXLXW"><img src="https://i.imgur.com/kfY4xMv.png"></a>
+## brain-prime
+<a href="https://asciinema.org/a/cM4wXiJTxfKzVUsnuEIcn2LHt"><img src="https://i.imgur.com/h1ZbbjN.png"></a>
